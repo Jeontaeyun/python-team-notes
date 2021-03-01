@@ -1,7 +1,7 @@
 # 👋🏻 Introduction
 
-This repository is Python Coding Test Team Notes. It is my algorithm study notes.  
-What we can see in algorithm test are mainly next type of problem:
+This repository is Python Coding Test Team Notes. It's going to be my own algorithm study notes.  
+What we've been seen in algorithm test are mainly next type of problem:
 
 - Greedy
 - Dynamic Programming
@@ -14,4 +14,18 @@ What we can see in algorithm test are mainly next type of problem:
 
 This repository is going to describe about above problem and solution using `python` language.
 
-# Overall Description
+# 💡 Overall Description
+
+### Algorithm Design Paradigm
+
+To make good algorithm, we have [several methodology](http://www.aistudy.co.kr/algorithm/design_park.htm) like:
+
+- Divide and Conquer
+- Balance Algorithm
+- Recursion Algorithm
+- Dynamic Programming
+- Greedy Algorithm
+- Backtracking
+- Approximation Algorithm
+
+And I need to learn about complexity theory afterward(like P problem, NP problem).
