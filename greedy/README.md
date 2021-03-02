@@ -1,5 +1,10 @@
-### Greedy Algorithm
+## Greedy Algorithm
 
-> 그리드 알고리즘은 "지금 당장 좋은 것만 고르는 방법"이다. 그리드 알고리즘을 이용하면 매 순간 가장 좋아 보이는 것을 선택하며, 현재의 선택이 나중에 미칠 영향에 대해서는 고려하지 않는다.
+> Greedy Algorithm is to take a locally optimal choice at each stage. don't care about next step.
 
-그리드 알고리즘으로 문제 해법을 찾았어도 그 해법이 정당하니 검토해야 한다. 그리드 알고리즘은 "최적의 해"를 찾는 것이지 정확한 답을 찾는 알고리즘이 아니다. 대부분의 그리드 알고리즘 문제에서 문제 풀이를 위한 최소한의 아이디어를 떠올리고 이것이 정당한지 검토할 수 있어야 답을 도출할 수 있다.
+### Main Problem
+
+- To be one Problem
+- Charge Problem
+- Dijkstra Shortest Path Problem
+- Kruskal Algorithm(MST)
