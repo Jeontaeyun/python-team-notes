@@ -1,5 +1,6 @@
 # Adventurer Guild
 # Time Limit 30m, Memory Limit 128MB
+# O(N) -> 컴퓨터 2,000만번의 연산이 가능 -> 데이터, 10만은 O(N)으로 처리 가능
 
 n = int(input())
 fear_list = list(map(int, input().split()))

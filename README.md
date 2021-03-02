@@ -29,3 +29,7 @@ To make good algorithm, we have [several methodology](http://www.aistudy.co.kr/a
 - Approximation Algorithm
 
 And I need to learn about complexity theory afterward(like P problem, NP problem).
+
+### Python Operating Performance
+
+We have a assumption that python code operate 20,000,000(20million) times per second
