@@ -1,20 +1,10 @@
+# Muzi Food Fight Problem(Kakako)
+# (30m, 1s, 128MB)
+# O(k), 1 <= k <= 2e13
+
 def solution(food_times, k):
     answer = 0
     current_index = 0
-    for i in range(0, k):
-        while True:
-            if sum(food_times) == 0:
-                break
-            if food_times[current_index] != 0:
-                food_times[current_index] -= 1
-                current_index += 1
-                if current_index == (len(food_times)):
-                    current_index = 0
-                break
-            else:
-                current_index += 1
-                if current_index == (len(food_times)):
-                    current_index = 0
 
     last_index = -2
     for i in range(current_index, len(food_times)):
