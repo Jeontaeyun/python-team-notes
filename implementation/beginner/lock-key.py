@@ -30,20 +30,49 @@ def slice_2d_matrix(matrix, row, column):
             result[i][j] = matrix[row + i][column + j] 
     return result
 
+def check_can_lock(lock, key, row, column):
+    n = len(lock)
+    key_row_length = len(key)
+    key_column_length = len(key[0])
+    for r in range(n):
+        for c in range(n):
+            if r >= row and c >= column and (r-row) < key_row_length and (c-column) < key_column_length:
+                if lock[r][c] ^ key[r-row][c-column] == 0:
+                    return False
+            else : 
+                if lock[r][c] == 0:
+                    return False
+    return True
+  
 
 
 def solution(key, lock):
     answer = False
-    n = len(lock);
-    m = len(key);
-    result = [[0] * n for _ in range(n)]
+    n = len(lock)
+    m = len(key)
+    result = False
     for lock_row in range(n):
+        if result == True :
+            break
         for lock_column in range(n):
-            for key_row in range(m):
-                for key_column in range(m):
-
+            if result == True :
+                break
+            # ! 연산의 순서가 중요하다. 배열을 회전하는 것이 비용이 가장 많이들기 때문에 최대한 나중에 한다.
+            for rotate in range(4):
+                key = rotate_matrix_90deg(key)
+                if result == True :
+                    break
+                for key_row in range(m):
+                    if result == True :
+                        break
+                    for key_column in range(m):
+                        sliced_key = slice_2d_matrix(key, key_row, key_column)
+                        result = check_can_lock(lock, sliced_key, lock_row, lock_column)
+                        if result == True:
+                            answer = True
+                            break
+  
     return answer
 
-print([[0, 0, 0], [1, 0, 0], [0, 1, 1]] + [[1, 1, 1], [1, 1, 0], [1, 0, 1]])
-#result = solution([[0, 0, 0], [1, 0, 0], [0, 1, 1]], [[1, 1, 1], [1, 1, 0], [1, 0, 1]])
-#print(rotate)
+result = solution([[0, 0, 0], [1, 0, 0], [0, 1, 1]], [[1, 1, 1], [1, 1, 0], [1, 0, 1]])
+print(result)
