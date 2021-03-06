@@ -33,3 +33,11 @@ And I need to learn about complexity theory afterward(like P problem, NP problem
 ### Python Operating Performance
 
 We have a assumption that python code operate 20,000,000(20million) times per second
+
+### Document Rules
+
+| Tag     | description                                   |
+| ------- | --------------------------------------------- |
+| FEATURE | Solve problem or make some utility function   |
+| FIX     | Fix some code for optimizing                  |
+| DOCS    | Documentation type or utility function or etc |
