@@ -1,5 +1,5 @@
 // PROBLEM: https://www.acmicpc.net/problem/1992
-// Type: Dynamic Programming
+// Type: Divide and Conquer
 
 function sum(arr)
 {
@@ -17,7 +17,6 @@ function quadTree(n, input)
 {
   const result = checkShouldMerge(n, input);
   if (result !== -1) return String(result);
-
   if (n === 2) return `(${input[0][0]}${input[0][1]}${input[1][0]}${input[0][1]})`;
 
   const topLeft = input.slice(0, n / 2).map((item) => item.slice(0, n / 2));
